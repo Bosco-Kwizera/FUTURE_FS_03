@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same across all pages) -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>The Daily Grind</h2>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to The Daily Grind</h1>
+            <p>Where coffee meets comfort • Breakfast • Lunch • Dinner</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">View Menu</a>
+                <a href="contact.html" class="btn btn-secondary">Find Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Promises -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-coffee"></i>
+            <h3>Artisan Coffee</h3>
+            <p>Small-batch roasted beans from sustainable farms</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Farm to Table</h3>
+            <p>Fresh local ingredients in every dish</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-wifi"></i>
+            <h3>Work Friendly</h3>
+            <p>Free high-speed WiFi and plenty of outlets</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-music"></i>
+            <h3>Live Music</h3>
+            <p>Local artists every Friday night</p>
+        </div>
+    </section>
+
+    <!-- Specials Preview -->
+    <section class="specials-preview">
+        <h2>Today's Specials</h2>
+        <div class="specials-grid" id="specialsGrid">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready for the best cup of coffee in town?</h2>
+            <a href="contact.html" class="btn btn-primary">Visit Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>The Daily Grind</h4>
+                <p>123 Main Street<br>Anytown, USA 12345</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Fri: 7am - 9pm<br>Sat-Sun: 8am - 10pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Daily Grind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
