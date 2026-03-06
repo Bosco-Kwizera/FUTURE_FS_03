@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <!-- Navigation (same) -->
+<body class="menu-page">
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
             <h2>The Daily Grind</h2>
@@ -24,137 +24,436 @@
         </ul>
     </nav>
 
-    <!-- Page Header -->
+    <!-- Page Header with fixed bg -->
     <header class="page-header">
         <h1>Our Menu</h1>
         <p>Freshly prepared • Locally sourced • Always delicious</p>
     </header>
 
-    <!-- Menu Categories -->
+    <!-- Menu Categories with Images -->
     <section class="menu-section">
         <div class="container">
-            <!-- Coffee Category -->
+            <!-- Coffee & Espresso Category with Images -->
             <div class="menu-category">
                 <h2><i class="fas fa-mug-hot"></i> Coffee & Espresso</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>House Blend Drip Coffee</h3>
-                            <span class="price">$3.25</span>
+                <div class="menu-grid-with-images">
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/374757/pexels-photo-374757.jpeg?auto=compress&cs=tinysrgb&w=600" alt="House Blend Coffee">
                         </div>
-                        <p>Medium roast, smooth and balanced</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>House Blend Drip Coffee</h3>
+                                <span class="price">$3.25</span>
+                            </div>
+                            <p>Medium roast, smooth and balanced. Sourced from Colombia.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Espresso</h3>
-                            <span class="price">$3.50</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Espresso">
                         </div>
-                        <p>Rich, bold single-origin espresso</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Espresso</h3>
+                                <span class="price">$3.50</span>
+                            </div>
+                            <p>Rich, bold single-origin espresso with perfect crema.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Latte</h3>
-                            <span class="price">$4.75</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Latte">
                         </div>
-                        <p>Espresso with steamed milk (oat, almond, or whole)</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Latte</h3>
+                                <span class="price">$4.75</span>
+                            </div>
+                            <p>Espresso with steamed milk (oat, almond, or whole) and light foam.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Cappuccino</h3>
-                            <span class="price">$4.50</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/16579374/pexels-photo-16579374/free-photo-of-cappuccino-on-table.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cappuccino">
                         </div>
-                        <p>Equal parts espresso, steamed milk, and foam</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Cappuccino</h3>
+                                <span class="price">$4.50</span>
+                            </div>
+                            <p>Equal parts espresso, steamed milk, and thick foam.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Cold Brew</h3>
-                            <span class="price">$4.75</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/13412467/pexels-photo-13412467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cold Brew">
                         </div>
-                        <p>24-hour steep, served over ice</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Cold Brew</h3>
+                                <span class="price">$4.75</span>
+                            </div>
+                            <p>24-hour steep, smooth and low-acid, served over ice.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1271134/pexels-photo-1271134.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mocha">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Mocha</h3>
+                                <span class="price">$5.25</span>
+                            </div>
+                            <p>Espresso with steamed milk and rich dark chocolate.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Breakfast Category -->
+            <!-- Breakfast Category with Images -->
             <div class="menu-category">
                 <h2><i class="fas fa-bread-slice"></i> Breakfast</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Avocado Toast</h3>
-                            <span class="price">$8.95</span>
+                <div class="menu-grid-with-images">
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Avocado Toast">
                         </div>
-                        <p>Sourdough, fresh avocado, chili flakes, lime</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Avocado Toast</h3>
+                                <span class="price">$8.95</span>
+                            </div>
+                            <p>Sourdough, fresh avocado, chili flakes, lime, and sea salt.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Breakfast Sandwich</h3>
-                            <span class="price">$7.95</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Breakfast Sandwich">
                         </div>
-                        <p>Egg, cheddar, bacon on a brioche bun</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Breakfast Sandwich</h3>
+                                <span class="price">$7.95</span>
+                            </div>
+                            <p>Egg, cheddar, bacon on a toasted brioche bun.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Greek Yogurt Bowl</h3>
-                            <span class="price">$6.95</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Greek Yogurt Bowl">
                         </div>
-                        <p>Honey, granola, fresh berries</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Greek Yogurt Bowl</h3>
+                                <span class="price">$6.95</span>
+                            </div>
+                            <p>Honey, house-made granola, fresh berries, and mint.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/8413052/pexels-photo-8413052.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pancakes">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Buttermilk Pancakes</h3>
+                                <span class="price">$9.95</span>
+                            </div>
+                            <p>Stack of three with maple syrup and fresh fruit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Omelette">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Farmhouse Omelette</h3>
+                                <span class="price">$10.95</span>
+                            </div>
+                            <p>Three eggs, cheddar, mushrooms, spinach, and toast.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600" alt="French Toast">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>French Toast</h3>
+                                <span class="price">$8.95</span>
+                            </div>
+                            <p>Brioche dipped in cinnamon-vanilla batter, powdered sugar.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Lunch & Dinner -->
+            <!-- Lunch & Dinner Category with Images -->
             <div class="menu-category">
                 <h2><i class="fas fa-hamburger"></i> Lunch & Dinner</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Turkey & Avocado Sandwich</h3>
-                            <span class="price">$11.95</span>
+                <div class="menu-grid-with-images">
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1600718/pexels-photo-1600718.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turkey Sandwich">
                         </div>
-                        <p>Sourdough, turkey, avocado, lettuce, tomato, aioli</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Turkey & Avocado Sandwich</h3>
+                                <span class="price">$11.95</span>
+                            </div>
+                            <p>Sourdough, roasted turkey, avocado, lettuce, tomato, aioli.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Quinoa Salad</h3>
-                            <span class="price">$10.95</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Quinoa Salad">
                         </div>
-                        <p>Mixed greens, quinoa, cucumber, feta, lemon vinaigrette</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Quinoa Salad</h3>
+                                <span class="price">$10.95</span>
+                            </div>
+                            <p>Mixed greens, quinoa, cucumber, cherry tomatoes, feta, lemon vinaigrette.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Margherita Flatbread</h3>
-                            <span class="price">$12.95</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Margherita Flatbread">
                         </div>
-                        <p>Fresh mozzarella, tomato, basil, balsamic glaze</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Margherita Flatbread</h3>
+                                <span class="price">$12.95</span>
+                            </div>
+                            <p>Fresh mozzarella, tomato, basil, balsamic glaze, olive oil.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1279332/pexels-photo-1279332.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Burger">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Classic Cheeseburger</h3>
+                                <span class="price">$13.95</span>
+                            </div>
+                            <p>Angus beef, cheddar, lettuce, tomato, onion, special sauce, fries.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Grilled Chicken">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Grilled Chicken Sandwich</h3>
+                                <span class="price">$12.95</span>
+                            </div>
+                            <p>Marinated chicken breast, avocado, bacon, chipotle mayo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Caesar Salad">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Caesar Salad</h3>
+                                <span class="price">$9.95</span>
+                            </div>
+                            <p>Romaine, parmesan, croutons, house-made Caesar dressing.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Pastries -->
+            <!-- Pastries & Desserts Category with Images -->
             <div class="menu-category">
-                <h2><i class="fas fa-cookie"></i> Pastries</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Butter Croissant</h3>
-                            <span class="price">$3.95</span>
+                <h2><i class="fas fa-cookie"></i> Pastries & Desserts</h2>
+                <div class="menu-grid-with-images">
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Butter Croissant">
                         </div>
-                        <p>Flaky, golden, made fresh daily</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Butter Croissant</h3>
+                                <span class="price">$3.95</span>
+                            </div>
+                            <p>Flaky, golden, made fresh daily with French butter.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Chocolate Chip Cookie</h3>
-                            <span class="price">$2.95</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/189538/pexels-photo-189538.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolate Chip Cookie">
                         </div>
-                        <p>Soft-baked with dark chocolate chunks</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Chocolate Chip Cookie</h3>
+                                <span class="price">$2.95</span>
+                            </div>
+                            <p>Soft-baked with dark chocolate chunks and sea salt.</p>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3>Cinnamon Roll</h3>
-                            <span class="price">$4.95</span>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/14108/pexels-photo-14108.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cinnamon Roll">
                         </div>
-                        <p>With cream cheese frosting</p>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Cinnamon Roll</h3>
+                                <span class="price">$4.95</span>
+                            </div>
+                            <p>With cream cheese frosting and chopped pecans.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blueberry Muffin">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Blueberry Muffin</h3>
+                                <span class="price">$3.75</span>
+                            </div>
+                            <p>Fresh blueberries, streusel topping, moist and delicious.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cheesecake">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>New York Cheesecake</h3>
+                                <span class="price">$6.95</span>
+                            </div>
+                            <p>Creamy, rich, with graham cracker crust and berry compote.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1352270/pexels-photo-1352270.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brownie">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Chocolate Brownie</h3>
+                                <span class="price">$3.95</span>
+                            </div>
+                            <p>Fudgy, with walnuts and chocolate chunks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialty Drinks Category -->
+            <div class="menu-category">
+                <h2><i class="fas fa-glass-cheers"></i> Specialty Drinks</h2>
+                <div class="menu-grid-with-images">
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Matcha Latte">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Matcha Latte</h3>
+                                <span class="price">$5.25</span>
+                            </div>
+                            <p>Ceremonial grade matcha, steamed milk, lightly sweetened.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/765811/pexels-photo-765811.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chai Latte">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Chai Latte</h3>
+                                <span class="price">$4.95</span>
+                            </div>
+                            <p>Spiced black tea concentrate with steamed milk.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hot Chocolate">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Italian Hot Chocolate</h3>
+                                <span class="price">$4.75</span>
+                            </div>
+                            <p>Rich, thick, made with dark chocolate, topped with whipped cream.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Iced Tea">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Fresh Brewed Iced Tea</h3>
+                                <span class="price">$3.50</span>
+                            </div>
+                            <p>Choice of black, green, or hibiscus, served with lemon.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/969177/pexels-photo-969177.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smoothie">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Berry Smoothie</h3>
+                                <span class="price">$6.50</span>
+                            </div>
+                            <p>Mixed berries, banana, Greek yogurt, honey.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-image-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/350478/pexels-photo-350478.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fresh Juice">
+                        </div>
+                        <div class="menu-image-content">
+                            <div class="item-header">
+                                <h3>Fresh Orange Juice</h3>
+                                <span class="price">$4.25</span>
+                            </div>
+                            <p>Freshly squeezed daily.</p>
+                        </div>
                     </div>
                 </div>
             </div>
