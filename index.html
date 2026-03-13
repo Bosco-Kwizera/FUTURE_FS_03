@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Grind | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <!-- Navigation (same across all pages) -->
+<body class="home-page">
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
             <h2>The Daily Grind</h2>
@@ -24,55 +25,142 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Advertising -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to The Daily Grind</h1>
-            <p>Where coffee meets comfort • Breakfast • Lunch • Dinner</p>
+            <h1>The Daily Grind</h1>
+            <div class="tagline">Where Every Cup Tells a Story</div>
+            <p class="description">
+                Experience the finest artisan coffee in town. 
+                Freshly roasted beans, cozy atmosphere, and unforgettable flavors.
+                Start your day the right way! ☕
+            </p>
             <div class="hero-buttons">
-                <a href="menu.html" class="btn btn-primary">View Menu</a>
-                <a href="contact.html" class="btn btn-secondary">Find Us</a>
+                <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+                <a href="contact.html" class="btn btn-secondary">Visit Us Today</a>
             </div>
         </div>
     </section>
+
+    <!-- Promotional Banner -->
+    <div class="promo-banner">
+        <p>✨ Happy Hour Everyday 3PM - 5PM • <span>20% OFF</span> All Beverages ✨</p>
+    </div>
 
     <!-- Features / Promises -->
     <section class="features">
         <div class="feature-card">
             <i class="fas fa-coffee"></i>
             <h3>Artisan Coffee</h3>
-            <p>Small-batch roasted beans from sustainable farms</p>
+            <p>Small-batch roasted beans from sustainable farms. Each cup is crafted with passion and precision.</p>
         </div>
         <div class="feature-card">
             <i class="fas fa-utensils"></i>
             <h3>Farm to Table</h3>
-            <p>Fresh local ingredients in every dish</p>
+            <p>Fresh local ingredients in every dish. Supporting local farmers and bringing you the best.</p>
         </div>
         <div class="feature-card">
             <i class="fas fa-wifi"></i>
             <h3>Work Friendly</h3>
-            <p>Free high-speed WiFi and plenty of outlets</p>
+            <p>Free high-speed WiFi and plenty of outlets. Your perfect remote office away from home.</p>
         </div>
         <div class="feature-card">
             <i class="fas fa-music"></i>
             <h3>Live Music</h3>
-            <p>Local artists every Friday night</p>
+            <p>Local artists every Friday night. Enjoy great coffee with amazing live performances.</p>
         </div>
     </section>
 
-    <!-- Specials Preview -->
-    <section class="specials-preview">
-        <h2>Today's Specials</h2>
-        <div class="specials-grid" id="specialsGrid">
-            <!-- Populated by JavaScript -->
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <h2>Today's Special Offers</h2>
+        <p class="subtitle">Don't miss out on these amazing deals!</p>
+        
+        <div class="offers-grid">
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <h3>Morning Combo</h3>
+                <p>Any coffee + Fresh croissant</p>
+                <div class="offer-price">$8.95</div>
+                <a href="menu.html" class="btn-small">Order Now</a>
+            </div>
+            
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Lunch Special</h3>
+                <p>Sandwich + Soup + Drink</p>
+                <div class="offer-price">$14.95</div>
+                <a href="menu.html" class="btn-small">Order Now</a>
+            </div>
+            
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-cookie"></i>
+                </div>
+                <h3>Happy Hour</h3>
+                <p>All beverages 20% off</p>
+                <div class="offer-price">3PM - 5PM</div>
+                <a href="menu.html" class="btn-small">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "Best coffee in town! The atmosphere is perfect for working or catching up with friends. 
+                    The staff remembers my order every time!"
+                </p>
+                <div class="testimonial-author">
+                    Sarah Johnson <span>• Regular Customer</span>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "Their avocado toast is incredible! And the cold brew is smooth and never bitter. 
+                    This is my go-to spot every weekend."
+                </p>
+                <div class="testimonial-author">
+                    Michael Chen <span>• Food Enthusiast</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <div class="stat-number">5000+</div>
+            <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Coffee Varieties</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Years of Service</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Organic Beans</div>
         </div>
     </section>
 
     <!-- Call to Action -->
     <section class="cta">
         <div class="cta-content">
-            <h2>Ready for the best cup of coffee in town?</h2>
-            <a href="contact.html" class="btn btn-primary">Visit Us Today</a>
+            <h2>Ready for the Best Coffee Experience?</h2>
+            <p>Join us today and discover why The Daily Grind is the favorite spot for coffee lovers.</p>
+            <a href="contact.html" class="btn btn-primary">Find Us Now</a>
         </div>
     </section>
 

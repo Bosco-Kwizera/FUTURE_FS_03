@@ -1,0 +1,672 @@
+/* ===== ABOUT.CSS - ABOUT PAGE SPECIFIC STYLES ===== */
+
+/* About page background - RICH CHOCOLATE THEME */
+body.about-page {
+    background: url('https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover fixed no-repeat;
+}
+
+/* Alternative chocolate-themed backgrounds: */
+/* Chocolate beans - https://images.pexels.com/photos/6853600/pexels-photo-6853600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+/* Hot chocolate - https://images.pexels.com/photos/3353955/pexels-photo-3353955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+/* Coffee and chocolate - https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+/* Chocolate dessert - https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+
+/* ===== PAGE HEADER WITH CHOCOLATE THEME ===== */
+.page-header {
+    text-align: center;
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(90, 62, 50, 0.8));
+    backdrop-filter: blur(8px);
+    border-bottom: 4px solid #8B4513;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '🍫 ☕ 🍪';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    opacity: 0.3;
+    color: #D2691E;
+    white-space: nowrap;
+    animation: slideIcons 20s linear infinite;
+}
+
+.page-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #8B4513, #D2691E, #8B4513, transparent);
+}
+
+.page-header h1 {
+    color: #FFF8E7;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.page-header h1 span {
+    color: #D2691E;
+    font-size: 4rem;
+}
+
+.page-header p {
+    color: #FFE4B5;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* ===== ABOUT STORY SECTION WITH CHOCOLATE ACCENTS ===== */
+.about-story {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, rgba(44, 24, 16, 0.7), rgba(70, 40, 30, 0.7));
+    backdrop-filter: blur(8px);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-text {
+    padding: 3rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.6), rgba(160, 82, 45, 0.6));
+    backdrop-filter: blur(5px);
+    border: 2px solid #D2691E;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.story-text::before {
+    content: '"';
+    position: absolute;
+    top: -50px;
+    left: -20px;
+    font-size: 12rem;
+    color: rgba(210, 105, 30, 0.2);
+    font-family: serif;
+    transform: rotate(15deg);
+}
+
+.story-text h2 {
+    color: #FFE4B5;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+}
+
+.story-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: #D2691E;
+    border-radius: 2px;
+}
+
+.story-text p {
+    margin-bottom: 1.5rem;
+    color: #FFF8E7;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.story-text .highlight {
+    color: #FFD700;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.story-image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 4px solid #8B4513;
+    position: relative;
+}
+
+.story-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.3), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.08);
+}
+
+/* ===== CHOCOLATE COLOR PALETTE SECTION ===== */
+.chocolate-palette {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.color-chip {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #FFF8E7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.color-chip:hover {
+    transform: scale(1.2);
+}
+
+.color-chip.dark { background: #2C1810; }
+.color-chip.milk { background: #8B4513; }
+.color-chip.semi { background: #D2691E; }
+.color-chip.light { background: #FFE4B5; }
+.color-chip.gold { background: #FFD700; }
+
+/* ===== VALUES SECTION WITH CHOCOLATE CARDS ===== */
+.values {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(70, 40, 30, 0.8));
+    backdrop-filter: blur(8px);
+    text-align: center;
+    border-top: 3px solid #8B4513;
+    border-bottom: 3px solid #8B4513;
+}
+
+.values h2 {
+    color: #FFE4B5;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    position: relative;
+    display: inline-block;
+}
+
+.values h2::before,
+.values h2::after {
+    content: '✦';
+    color: #D2691E;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.values h2::before {
+    left: -60px;
+}
+
+.values h2::after {
+    right: -60px;
+}
+
+.values-subtitle {
+    color: #FFF8E7;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.value-card {
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.5), rgba(160, 82, 45, 0.5));
+    backdrop-filter: blur(5px);
+    border: 2px solid #D2691E;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 228, 181, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.value-card:hover::before {
+    opacity: 1;
+}
+
+.value-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: #FFD700;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.value-card i {
+    font-size: 4rem;
+    color: #FFD700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+.value-card:hover i {
+    transform: scale(1.2) rotate(10deg);
+    color: #FFF8E7;
+}
+
+.value-card h3 {
+    color: #FFE4B5;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: #FFF8E7;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* ===== TIMELINE SECTION ===== */
+.timeline-section {
+    padding: 5rem 5%;
+    background: rgba(44, 24, 16, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+.timeline-section h2 {
+    color: #FFE4B5;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #8B4513, #D2691E, #FFD700, #D2691E, #8B4513);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #8B4513, #D2691E);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF8E7;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 4px solid #FFD700;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.timeline-year:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+}
+
+.timeline-content {
+    width: calc(50% - 80px);
+    padding: 2rem;
+    background: rgba(139, 69, 19, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 2px solid #D2691E;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    background: rgba(139, 69, 19, 0.6);
+    border-color: #FFD700;
+    transform: translateY(-5px);
+}
+
+.timeline-content h3 {
+    color: #FFE4B5;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #FFF8E7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ===== TEAM SECTION WITH CHOCOLATE THEME ===== */
+.team {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(70, 40, 30, 0.8));
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.team h2 {
+    color: #FFE4B5;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.team-subtitle {
+    color: #FFF8E7;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.5), rgba(160, 82, 45, 0.5));
+    backdrop-filter: blur(5px);
+    border: 2px solid #D2691E;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member::after {
+    content: '☕';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 6rem;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+}
+
+.team-member:hover {
+    transform: translateY(-15px);
+    border-color: #FFD700;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 1.5rem;
+    border: 4px solid #D2691E;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+    border-color: #FFD700;
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+}
+
+.team-member h3 {
+    color: #FFE4B5;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.team-member .role {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.team-member .bio {
+    color: #FFF8E7;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* ===== ACHIEVEMENTS SECTION ===== */
+.achievements {
+    padding: 4rem 5%;
+    background: rgba(44, 24, 16, 0.7);
+    backdrop-filter: blur(8px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    border-top: 3px solid #8B4513;
+    border-bottom: 3px solid #8B4513;
+}
+
+.achievement-item {
+    text-align: center;
+    color: #FFF8E7;
+    padding: 2rem;
+    background: rgba(139, 69, 19, 0.3);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    background: rgba(139, 69, 19, 0.5);
+    transform: translateY(-5px);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.achievement-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFE4B5;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-label {
+    font-size: 1.1rem;
+    color: #FFF8E7;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideIcons {
+    0% {
+        transform: translateX(-50%) translateX(-100%);
+    }
+    100% {
+        transform: translateX(-50%) translateX(100%);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .achievements {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values h2::before,
+    .values h2::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header h1 {
+        font-size: 2.8rem;
+    }
+    
+    .page-header h1 span {
+        font-size: 3.2rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 80px;
+    }
+    
+    .timeline-year {
+        width: 80px;
+        height: 80px;
+        font-size: 1.3rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .achievements {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-header h1 span {
+        font-size: 2.5rem;
+    }
+    
+    .page-header p {
+        font-size: 1.1rem;
+    }
+    
+    .story-text {
+        padding: 2rem;
+    }
+    
+    .story-text h2 {
+        font-size: 2rem;
+    }
+    
+    .story-text p {
+        font-size: 1rem;
+    }
+    
+    .values h2 {
+        font-size: 2.2rem;
+    }
+    
+    .team h2 {
+        font-size: 2.2rem;
+    }
+    
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}

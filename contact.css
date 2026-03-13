@@ -1,0 +1,467 @@
+/* ===== CONTACT.CSS - CONTACT PAGE SPECIFIC STYLES ===== */
+
+/* Contact page background - COFFEE SHOP INTERIOR */
+body.contact-page {
+    background: url('https://images.pexels.com/photos/1913030/pexels-photo-1913030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover fixed no-repeat;
+}
+
+/* Alternative coffee shop interior images you might like: */
+/* Modern coffee shop - https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+/* Cozy cafe interior - https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+/* Coffee bar - https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+/* Rustic coffee shop - https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    text-align: center;
+    padding: 4rem 5%;
+    background-color: rgba(44, 24, 16, 0.7); /* Darker background for better contrast */
+    backdrop-filter: blur(5px);
+}
+
+.page-header h1 {
+    color: #ffffff; /* Pure white */
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.page-header p {
+    color: #ffd700; /* Gold color */
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+}
+
+/* ===== CONTACT INFO SECTION ===== */
+.contact-info-section {
+    padding: 4rem 5%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    backdrop-filter: blur(5px);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== CONTACT DETAILS CARD ===== */
+.contact-details {
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(44, 24, 16, 0.9) 0%, rgba(90, 62, 50, 0.9) 100%);
+    backdrop-filter: blur(5px);
+    border: 2px solid #c49a6c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-details h2 {
+    color: #ffd700; /* Gold */
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #c49a6c;
+    padding-bottom: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.detail-item i {
+    font-size: 2.2rem;
+    color: #ffd700; /* Gold */
+    min-width: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.detail-item h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: #ffffff; /* White */
+    font-weight: 600;
+}
+
+.detail-item p {
+    color: #f0f0f0; /* Off-white */
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.detail-item a {
+    color: #ffd700; /* Gold */
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.detail-item a:hover {
+    color: #ffffff;
+    border-bottom-color: #ffd700;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(44, 24, 16, 0.9) 0%, rgba(90, 62, 50, 0.9) 100%);
+    backdrop-filter: blur(5px);
+    border: 2px solid #c49a6c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h2 {
+    color: #ffd700; /* Gold */
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #c49a6c;
+    padding-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid #c49a6c;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Form validation styles */
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ff4444;
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+.form-group input.valid,
+.form-group textarea.valid {
+    border-color: #00c851;
+}
+
+/* Submit button */
+.contact-form .btn-primary {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    background: #c49a6c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    border: 2px solid transparent;
+}
+
+.contact-form .btn-primary:hover {
+    background: #b0835a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: #ffd700;
+}
+
+.contact-form .btn-primary:active {
+    transform: translateY(0);
+}
+
+/* ===== MAP SECTION ===== */
+.map-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.map-section h2 {
+    color: #ffd700; /* Gold */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border: 3px solid #c49a6c;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+/* ===== BUSINESS HOURS CARD ===== */
+.hours-card {
+    background: rgba(44, 24, 16, 0.8);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border: 1px solid #c49a6c;
+}
+
+.hours-card h3 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.hours-item {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.hours-item .day {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.hours-item .time {
+    color: #c49a6c;
+    font-size: 1rem;
+}
+
+/* ===== SOCIAL MEDIA LINKS (CONTACT PAGE) ===== */
+.contact-social {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact-social h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-social .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #c49a6c;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-social .social-icons a:hover {
+    background: #b0835a;
+    transform: translateY(-5px) scale(1.1);
+    border-color: #ffd700;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== ADDITIONAL CONTACT INFO ===== */
+.contact-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(44, 24, 16, 0.6);
+    border-radius: 15px;
+    border-left: 5px solid #ffd700;
+}
+
+.contact-note p {
+    color: white;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.contact-note i {
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+/* ===== CONTACT PAGE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-details,
+    .contact-form {
+        padding: 2rem;
+    }
+    
+    .detail-item {
+        flex-direction: row; /* Keep row direction */
+        align-items: center;
+    }
+    
+    .hours-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-details,
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .detail-item i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-header p {
+        font-size: 1.1rem;
+    }
+    
+    .contact-details h2,
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+    
+    .map-container iframe {
+        height: 300px;
+    }
+    
+    .contact-social .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ===== SUCCESS MESSAGE STYLES ===== */
+.success-message {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid #ffd700;
+    animation: slideIn 0.5s ease;
+}
+
+.success-message i {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.success-message h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.success-message p {
+    color: #f0f0f0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== ERROR MESSAGE STYLES ===== */
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    padding-left: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== QR CODE FOR RESERVATIONS (OPTIONAL) ===== */
+.qr-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.qr-code {
+    display: inline-block;
+    padding: 1rem;
+    background: white;
+    border-radius: 15px;
+    border: 3px solid #c49a6c;
+}
+
+.qr-code img {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.qr-code p {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
